@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Profile{
+    background-color: rgba(45, 219, 198, 1);
+    width: 60%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    left: 300px;
+    bottom: -110px;
+    border-radius: 40px;
+}
+
+
+
+.Pmain{
+    height: 100vh;
+    justify-content: center;
+    background-color: rgba(24, 4, 67, 1);
+}
+
+.Check-h4{
+    position: relative;
+    top: -150px;
+    left: 585px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    
+}
+.IconP1{
+    width: 30%;
+    height: 20%;
+    position: relative;
+    top: -220px;
+    left: 800px;
+    transition: 0.5s; 
+}
+
+.IconP1:hover{
+    transform: translateX(10px);
+}
+.IconP2{
+    width: 30%;
+    height: 20%;
+    position: relative;
+    top: 170px;
+    right: 630px;
+    transition: 0.5s; 
+}
+.IconP2:hover{
+    transform: translateX(-10px);
+}
+
+.Check-h5{
+    position: relative;
+    top: 220px;
+    right: 540px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.LogoF{
+    width: 200px;
+    display: flex;
+    position: relative;
+    left: 135px;
+    bottom: 60px;
+}
+
+.PR-h1{
+    font-size: 49px;
+    position: relative;
+    bottom: -80px;
+    left: -100px;
+    
+}
+
