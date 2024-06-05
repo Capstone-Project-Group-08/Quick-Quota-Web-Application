@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Gh1{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow:0 0 6px #27c0ff ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+    text-decoration: none;
+    color: white;
+}
+.Gp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 170px;
+}
+
+.G-BG{
+    background-image:linear-gradient(to top, rgb(4, 4, 37),rgba(6, 4, 97, 0.927)) ;
+    position: relative;
+    background-position: center ;
+    height: 120vh;
+    background-size: cover;
+}
+
+.Contact{
+    
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 250px;
+
+}
+.Get-In-Content{
+    width: 40%;
+}
+
+.HG {
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.Get-In-Content p {
+    width: 250px;
+    margin: 15px;
+    padding: 3px 180px ;
+    position: relative;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.social-iconG{
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.social-iconG li{
+    display: ilnine block;
+    text-align: center;
+    padding: 20px;
+    transition: 2s;
+}
+.social-iconG i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+.social-iconG i:hover{
+    color: #f18930;
+    font-size: 25px;
+    transform: translateY(-7px);
+}
+
+.G-Link{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: -330px;
+    left: 675px;
+}
