@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Jh1{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow:0 0 6px #27c0ff ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.Jp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 30px;
+   
+   
+}
+.Main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 70px;
+    top: 80px;
+    justify-content: space-evenly;
+    
+}
+.Jpp{
+    height: 280px;
+    position: relative;
+    top: 85px;
+    border-radius: 90px;
+}
+
+.J-BG{
+    background-image:linear-gradient(to top, rgb(4, 4, 37),rgba(6, 4, 97, 0.927)) ;
+    position: relative;
+    background-position: center ;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .Jh1 {
+        font-size: 35px;
+        top: 100px;
+    }
+
+    .Jp {
+        font-size: 26px;
+        top: -5px;
+    }
+
+    .Main {
+        padding: 60px;
+        top: 70px;
+    }
+
+    .Jpp {
+        height: 260px;
+        top: 50px;
+    }
+    .J-BG{
+        height: 105vh;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    .Jh1 {
+        font-size: 30px;
+        top: 90px;
+    }
+
+    .Jp {
+        font-size: 20px;
+        top: 20px;
+    }
+
+    .Main {
+        padding: 50px;
+        top: 60px;
+    }
+
+    .Jpp {
+        height: 220px;
+        top: 55px;
+    }
+    .J-BG{
+        height: 92vh;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .Jh1 {
+        font-size: 25px;
+        top: 80px;
+    }
+
+    .Jp {
+        font-size: 22px;
+        top: 15px;
+    }
+
+    .Main {
+        padding: 40px;
+        top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Jpp {
+        height: 220px;
+        top: 55px;
+    }
+}
