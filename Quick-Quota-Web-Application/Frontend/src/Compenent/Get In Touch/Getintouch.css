@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Gh1{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow:0 0 6px #27c0ff ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+    text-decoration: none;
+    color: white;
+}
+.Gp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 170px;
+}
+
+.G-BG{
+    background-image:linear-gradient(to top, rgb(4, 4, 37),rgba(6, 4, 97, 0.927)) ;
+    position: relative;
+    background-position: center ;
+    height: 120vh;
+    background-size: cover;
+}
+
+.Contact{
+    
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 250px;
+
+}
+.Get-In-Content{
+    width: 40%;
+}
+
+.HG {
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.Get-In-Content p {
+ 
+    margin: 15px 0;
+    padding: 3px 180px ;
+    position: relative;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.social-iconG{
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.social-iconG li{
+    display: ilnine block;
+    text-align: center;
+    padding: 20px;
+    transition: 2s;
+}
+.social-iconG i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+.social-iconG i:hover{
+    color: #f18930;
+    font-size: 25px;
+    transform: translateY(-7px);
+}
+
+.G-Link{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: -330px;
+    left: 675px;
+}
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width:600px){
+    .Gh1 {
+        font-size: 20px;
+        top: 70px;
+    }
+    .Gp {
+        font-size: 16px;
+        top: 100px;
+        padding: 0 10px;
+    }
+    .Contact {
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -150px;
+        font-size: 25px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 130vh;
+    }
+}
+@media (min-width: 600px) and (max-width:700px){
+    .Gh1 {
+        font-size: 25px;
+      
+    }
+    .Gp {
+        font-size: 14px;
+        top: 135px;
+        padding: 0 10px;
+    }
+    .Contact {
+        font-size: 14px;
+        top: 190px;
+    }
+    .HG{
+        font-size: 30px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -190px;
+        font-size: 23px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 700px) and (max-width:800px){
+    .Gh1 {
+        font-size: 28px;
+      
+    }
+    .Gp {
+        font-size: 16px;
+        top: 140px;
+        padding: 0 10px;
+    }
+    .Contact {
+        top: 190px;
+        font-size: 16px;
+    }
+    .HG{
+        font-size: 30px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -200px;
+        font-size: 25px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 800px) and (max-width:900px){
+    .Gh1 {
+        font-size: 28px;
+      
+    }
+    .Gp {
+        font-size: 19px;
+        top: 140px;
+        padding: 0 10px;
+    }
+    .Contact {
+        top: 190px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -200px;
+        font-size: 25px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 900px) and (max-width:1000px){
+    .Gh1 {
+        font-size: 35px; 
+    }
+    .Gp {
+        font-size: 21px;
+        top: 140px;
+        padding: 0 10px;
+    }
+    .Contact {
+        top: 200px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -210px;
+        font-size: 29px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 110vh;
+    }
+}
+@media (min-width: 1000px) and (max-width:1100px){
+    .Gh1 {
+        font-size: 38px; 
+    }
+    .Gp {
+        font-size: 23.5px;
+        top: 140px;
+        padding: 0 10px;
+    }
+    .Contact {
+        top: 200px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -190px;
+        font-size: 29px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 110vh;
+    }
+}
+@media (min-width: 1100px) and (max-width:1200px){
+    .Gh1 {
+        font-size: 38px; 
+    }
+    .Gp {
+        font-size: 26px;
+        top: 140px;
+        padding: 0 10px;
+    }
+    .Contact {
+        top: 200px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -190px;
+        font-size: 29px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 110vh;
+    }
+}
+@media (min-width: 1200px) and (max-width:1500px){
+    
+    .Contact {
+        top: 240px;
+    }
+    .Get-In-Content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .Get-In-Content p {
+        padding: 3px 20px;
+        text-align: center;
+    }
+    .G-Link {
+        left: auto;
+        bottom: -240px;
+        font-size: 29px;
+    }
+    .G-LinkM {
+        text-align: center;
+    }
+    .G-BG{
+        height: 130vh;
+    }
+}

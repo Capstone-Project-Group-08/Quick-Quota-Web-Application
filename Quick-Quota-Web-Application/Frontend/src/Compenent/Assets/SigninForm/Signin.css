@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.side-001 {
+    background-color: rgba(124, 191, 183, 1);
+    width: 35%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-002 {
+    background-color: rgba(45, 219, 198, 1);
+    width: 35%;
+    height: 75%;
+    flex-direction: column;
+}
+
+.Logo2 {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 62%;
+
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(24, 4, 67, 1);
+}
+
+.side-001 h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.side-001 .input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 30px 0;
+}
+
+.side-001 .user {
+    text-align: center;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.side-001 button {
+    width: 100%;
+    height: 30px;
+    background: rgba(24, 4, 67, 1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.side-002 button {
+    width: 20%;
+    height: 30px;
+    background: rgba(24, 4, 67, 1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.side-002 p {
+    text-align: center;
+}
+.side-002 .loginbutton {
+    position: absolute;
+    left: 215px;
+    top: 122px;
+}
+.Double {
+    position: relative;
+    top: 260px;
+    font-size: 25px;
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    .side-001 h1 {
+        font-size: 22px;
+    }
+    .side-001 {
+        width: 70%;
+    }
+    .remember-forget {
+        position: relative;
+        top: 8px;
+    }
+    .side-001 .input-box {
+        margin: 15px 0;
+    }
+    .side-002 {
+        width: 70%;
+    }
+    .side-002 p {
+        font-size: 14px;
+        margin: -140px;
+    }
+    .side-002 button {
+        width: 80px;
+        font-size: 8px;
+    }
+    .Logo2 {
+        width: 100px;
+        position: absolute;
+        left: 36%;
+        top: 53%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 33%;
+        top: 180%;
+    }
+    .wrapper {
+        height: calc(100vh + 150px); /* Increase the height by 150px */
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media (min-width: 430px) and (max-width: 500px) {
+    .side-001 h1 {
+        font-size: 22px;
+    }
+    .side-001 {
+        width: 70%;
+    }
+    .remember-forget {
+        position: relative;
+        top: 8px;
+    }
+    .side-001 .input-box {
+        margin: 15px 0;
+    }
+    .side-002 {
+        width: 70%;
+    }
+    .side-002 p {
+        font-size: 14px;
+        margin: -140px;
+    }
+    .side-002 button {
+        width: 80px;
+        font-size: 8px;
+    }
+    .Logo2 {
+        width: 100px;
+        position: absolute;
+        left: 38%;
+        top: 53%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 35%;
+        top: 180%;
+    }
+    .wrapper {
+        height: calc(100vh + 150px); /* Increase the height by 150px */
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media (min-width: 500px) and (max-width: 580px) {
+    .side-001 h1 {
+        font-size: 22px;
+    }
+    .side-001 {
+        width: 70%;
+    }
+    .remember-forget {
+        position: relative;
+        top: 8px;
+    }
+    .side-001 .input-box {
+        margin: 15px 0;
+    }
+    .side-002 {
+        width: 70%;
+    }
+    .side-002 p {
+        font-size: 14px;
+        margin: -140px;
+    }
+    .side-002 button {
+        width: 80px;
+        font-size: 8px;
+    }
+    .Logo2 {
+        width: 100px;
+        position: absolute;
+        left: 40%;
+        top: 53%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 39%;
+        top: 180%;
+    }
+    .wrapper {
+        height: calc(100vh + 150px); /* Increase the height by 150px */
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media (min-width: 580px) and (max-width: 650px) {
+    .side-001 h1 {
+        font-size: 22px;
+    }
+    .side-001 {
+        width: 70%;
+    }
+    .remember-forget {
+        position: relative;
+        top: 8px;
+    }
+    .side-001 .input-box {
+        margin: 15px 0;
+    }
+    .side-002 {
+        width: 70%;
+    }
+    .side-002 p {
+        font-size: 14px;
+        margin: -140px;
+    }
+    .side-002 button {
+        width: 80px;
+        font-size: 8px;
+    }
+    .Logo2 {
+        width: 100px;
+        position: absolute;
+        left: 41%;
+        top: 53%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 40%;
+        top: 180%;
+    }
+    .wrapper {
+        height: calc(100vh + 150px); /* Increase the height by 150px */
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media (min-width: 650px) and (max-width: 720px) {
+    .side-001 h1 {
+        font-size: 22px;
+    }
+    .side-001 {
+        width: 70%;
+    }
+    .remember-forget {
+        position: relative;
+        top: 8px;
+    }
+    .side-001 .input-box {
+        margin: 15px 0;
+    }
+    .side-002 {
+        width: 70%;
+    }
+    .side-002 p {
+        font-size: 14px;
+        margin: -140px;
+    }
+    .side-002 button {
+        width: 80px;
+        font-size: 8px;
+    }
+    .Logo2 {
+        width: 100px;
+        position: absolute;
+        left: 42%;
+        top: 53%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 41%;
+        top: 180%;
+    }
+    .wrapper {
+        height: calc(100vh + 150px); /* Increase the height by 150px */
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media (min-width: 720px) and (max-width: 770px) {
+    .side-001 h1 {
+        font-size: 22px;
+    }
+    .side-001 {
+        width: 70%;
+    }
+    .remember-forget {
+        position: relative;
+        top: 8px;
+    }
+    .side-001 .input-box {
+        margin: 15px 0;
+    }
+    .side-002 {
+        width: 70%;
+    }
+    .side-002 p {
+        font-size: 14px;
+        margin: -140px;
+    }
+    .side-002 button {
+        width: 80px;
+        font-size: 8px;
+    }
+    .Logo2 {
+        width: 100px;
+        position: absolute;
+        left: 43%;
+        top: 53%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 42%;
+        top: 180%;
+    }
+    .wrapper {
+        height: calc(100vh + 150px); /* Increase the height by 150px */
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media (min-width: 770px) and (max-width: 1000px) {
+    .side-002 p {
+        margin: -55px;
+    }
+    .side-002 button {
+        width: 100px;
+        font-size: 14px;
+    }
+    .Logo2 {
+        width: 130px;
+        position: absolute;
+        left: 59%;
+        top: 25%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 34%;
+        top: 164%;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .side-002 p {
+        margin: -55px;
+    }
+    .side-002 button {
+        width: 100px;
+        font-size: 14px;
+    }
+    .Logo2 {
+        width: 130px;
+        position: absolute;
+        left: 61%;
+        top: 25%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 36%;
+        top: 164%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .side-002 p {
+        margin: -55px;
+    }
+    .side-002 button {
+        width: 100px;
+        font-size: 14px;
+    }
+    .Logo2 {
+        width: 130px;
+        position: absolute;
+        left: 62%;
+        top: 25%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 39%;
+        top: 173%;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .side-002 p {
+       
+        margin: -55px;
+    }
+    .side-002 button {
+        width: 100px;
+        font-size: 14px;
+    }
+    .Logo2 {
+        width: 130px;
+        position: absolute;
+        left: 62%;
+        top: 25%;
+    }
+    .side-002 .loginbutton {
+        position: absolute;
+        left: 39%;
+        top: 181%;
+    }
+}
+

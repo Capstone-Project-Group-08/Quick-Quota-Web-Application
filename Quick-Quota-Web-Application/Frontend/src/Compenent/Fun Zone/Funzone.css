@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Fh1{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow:0 0 6px #27c0ff ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+    text-decoration: none;
+    color: white;
+}
+.Fp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 150px;
+   
+}
+.Fbtn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 200px; 
+}
+.Fbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 10px;
+    background-color: #ffb300;
+    outline: solid 3px #ffb300;
+    cursor: pointer;
+    text-align: center;
+    color: inherit;
+    margin: 30px 100px;
+}
+.Fbtn:hover{
+    background: transparent;
+    backdrop-filter:blur(0.9); 
+}
+.Fbtn:hover a{
+    color: #ffb300;
+}
+.Fbtn a{
+    text-decoration: none;
+}
+.F-BG{
+    background-image:linear-gradient(to top, rgb(4, 4, 37),rgba(6, 4, 97, 0.927));
+    position: relative;
+    background-position: center ;
+    height: 150vh;
+    background-size: cover;
+    
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 450px) {
+    .Fh1 {
+        font-size: 20px;
+    }
+    .Fp {
+        font-size: 9px;
+        top: 120px;
+   
+        text-align: center;
+    }
+    .Fbtn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        margin: 20px;
+        position: relative;
+        top: -40px;
+        border-radius: 12px;
+    }
+    .F-BG{
+        height: 100vh;
+    }
+}
+
+
+@media (min-width: 450px) and (max-width: 500px) {
+    .Fh1 {
+        font-size: 20px;
+    }
+    .Fp {
+        font-size: 11px;
+        top: 120px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 90px;
+        height: 30px;
+        font-size: 16px;
+        margin: 20px 25px;
+        position: relative;
+        top: -40px;
+        border-radius: 11px;
+    }
+    .F-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 500px) and (max-width: 550px) {
+    .Fh1 {
+        font-size: 20px;
+    }
+    .Fp {
+        font-size: 12px;
+        top: 120px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 90px;
+        height: 30px;
+        font-size: 16px;
+        margin: 20px 35px;
+        position: relative;
+        top: -40px;
+        border-radius: 11px;
+    }
+    .F-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+    .Fh1 {
+        font-size: 20px;
+    }
+    .Fp {
+        font-size: 13.5px;
+        top: 120px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 100px;
+        height: 35px;
+        font-size: 16px;
+        margin: 20px 40px;
+        position: relative;
+        top: -40px;
+        border-radius: 11px;
+    }
+    .F-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+    .Fh1 {
+        font-size: 25px;
+    }
+    .Fp {
+        font-size: 14px;
+        top: 120px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 130px;
+        height: 45px;
+        font-size: 20px;
+        margin: 10px 35px;
+        position: relative;
+        top: -25px;
+        border-radius: 16px;
+    }
+    .F-BG{
+        height: 100vh;
+    }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+    .Fh1 {
+        font-size: 28px;
+    }
+    .Fp {
+        font-size: 16.5px;
+        top: 135px;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 150px;
+        height: 50px;
+        font-size: 23px;
+        margin: 15px 40px;
+        position: relative;
+        top: -20px;
+        border-radius: 16px;
+    }
+    .F-BG{
+        height: 110vh;
+    }
+}
+@media (min-width: 800px) and (max-width: 900px) {
+    .Fh1 {
+        font-size: 28px;
+    }
+    .Fp {
+        font-size: 19px;
+        top: 135px;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 160px;
+        height: 55px;
+        font-size: 25px;
+        margin: 20px 53px;
+        position: relative;
+        top: -20px;
+        border-radius: 16px;
+    }
+    .F-BG{
+        height: 125vh;
+    }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+    .Fh1 {
+        font-size: 35px;
+    }
+    .Fp {
+        font-size: 21.5px;
+        top: 135px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .Fbtn {
+        width: 200px;
+        height: 60px;
+        font-size: 28px;
+        margin: 20px 50px;
+        position: relative;
+        top: -10px;
+        border-radius: 18px;
+    }
+    .F-BG{
+        height: 135vh;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .Fp {
+        font-size: 24px;
+        top: 135px;
+        text-align: center;
+    }.Fbtn {
+        width: 230px;
+        height: 65px;
+        font-size: 28px;
+        margin: 30px 50px;
+        position: relative;
+        top: -10px;
+        border-radius: 20px;
+    }
+    .F-BG{
+        height: 155vh;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1350px) {
+    .Fp {
+        text-align: center;
+    }.Fbtn {
+        margin: 30px 75px;
+        position: relative;
+        top: -10px;
+    }
+    .F-BG{
+        height: 155vh;
+    }
+}
+

@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Hori{
+    width: 475px;
+    height: 350px;
+    position: relative;
+}
+.Hori-M{
+    position: relative;
+    top: 150px;
+    left: 15px;
+}
+.carousel-item {
+    position: relative;    
+    overflow: hidden;
+}
+.image-text {
+    width: 455px;
+    height: 100%;
+    right: -100%;
+    position: absolute;
+    bottom: 0px; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1.5s;    
+}
+.carousel-item:hover .image-text {
+    right: 30px; 
+}
+.image-text h1{
+    position: relative;
+    top: -50px;
+    font-size:45px;
+}
+.Cbtn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffb300;  
+    outline: solid 3px #ffb300 ;
+    cursor: pointer;
+}
+.Cbtn:hover{
+    background: transparent;
+    backdrop-filter:blur(0.9); 
+    color: #ffb300;
+}
+.Cbtn:hover a{ 
+    color: #ffb300;
+}
+
+
+
+
+
+

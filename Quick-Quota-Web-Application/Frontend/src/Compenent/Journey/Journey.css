@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Jh1{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow:0 0 6px #27c0ff ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+    text-decoration: none;
+    color: white;
+}
+
+.Jp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 30px;   
+}
+.Main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 70px;
+    top: 80px;
+    justify-content: space-evenly;    
+}
+.Jpp{
+    height: 280px;
+    position: relative;
+    top: 85px;
+    border-radius: 90px;
+}
+.J-BG{
+    background-image:linear-gradient(to top, rgb(4, 4, 37),rgba(6, 4, 97, 0.927)) ;
+    position: relative;
+    background-position: center ;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 375px) and (max-width:600px){
+    .Jh1 {
+        font-size: 20px;
+    }
+    .Jp {
+        font-size: 15px;
+        top: 100px;    
+        order: 2; 
+    }
+    .Main {
+        padding: 0px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Jpp {
+        height: 220px;
+        top: 90px;
+        order: 1; 
+    }
+    .J-BG {
+        height: 110vh;
+    }
+}
+@media (min-width: 600px) and (max-width:700px){
+    .Jh1 {
+        font-size: 25px;
+    }
+    .Jp {
+        font-size: 19px;
+        top: 130px;    
+        order: 2; 
+    }
+    .Main {
+        padding: 0px;
+        top: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Jpp {
+        height: 300px;
+        width: 450px;
+        top: 90px;
+        order: 1; 
+    }
+    .J-BG {
+        height: 140vh;
+    }
+}
+@media (min-width: 700px) and (max-width:900px){
+    .Jh1 {
+        font-size: 28px;
+    }
+    .Jp {
+        font-size: 22px;
+        top: 130px;    
+        order: 2; 
+    }
+    .Main {
+        padding: 0px;
+        top: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Jpp {
+        height: 300px;
+        width: 500px;
+        top: 90px;
+        order: 1; 
+    }
+    .J-BG {
+        height: 155vh;
+    }
+}
+@media (min-width: 900px) and (max-width:1000px){
+    .Jh1 {
+        font-size: 35px;
+        top: 90px;
+    }
+    .Jp {
+        font-size: 21px;
+        top: 20px;
+    }
+    .Main {
+        padding: 50px;
+        top: 60px;
+    }
+    .Jpp {
+        height: 220px;
+        top: 55px;
+    }
+    .J-BG {
+        height: 92vh;
+    }
+}
+@media (min-width: 1000px) and (max-width:1100px){
+    .Jh1 {
+        font-size: 35px;
+        top: 90px;
+    }
+    .Jp {
+        font-size: 25px;
+        top: 20px;
+    }
+    .Main {
+        padding: 50px;
+        top: 60px;
+    }
+    .Jpp {
+        height: 220px;
+        top: 85px;
+    }
+    .J-BG {
+        height: 100vh;
+    } 
+}
+@media (min-width: 1100px) and (max-width:1200px){
+    .Jh1 {
+        font-size: 35px;
+        top: 100px;
+    }
+    .Jp {
+        font-size: 26px;
+        top: -5px;
+    }
+    .Main {
+        padding: 60px;
+        top: 70px;
+    }
+    .Jpp {
+        height: 260px;
+        top: 50px;
+    }
+    .J-BG {
+        height: 105vh;
+    }
+}
+@media (min-width: 1200px) {
+    .J-BG {
+        height: 120vh;
+    }
+}
+
+
+
