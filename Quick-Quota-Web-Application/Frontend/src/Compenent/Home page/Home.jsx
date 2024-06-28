@@ -1,24 +1,23 @@
 import React from 'react';
 import Navbar from '../Nav bar/Navbar';
-import './Home.css';
 import Slideimage from './Slideimage';
-import Footer from '../Footer/Footer';
+import './Home.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 function Home() {
   return (
-    <div className='H-BG'>
+    <div className='home-container'>
       <Navbar />
       <Slideimage />
 
       <h2 className='fadeIn'>Quick Quota</h2>
-      <h3 className='H-h3'>Save Desplay Time Enjoy Life With Quick Quota</h3>
-
+      <h3 className='H-h3'>Save Display Time Enjoy Life With Quick Quota</h3>
 
       <div className='MainH1'>
         <div className='Hp1'>
           <p>
             In a world where screens dominate our daily lives, finding a healthy balance
-            can feel like an uphill battle. That's where Quick Quota  comes in. We're here
+            can feel like an uphill battle. That's where Quick Quota comes in. We're here
             to help you reclaim control of your digital habits and rediscover the joy of a
             balanced lifestyle.
           </p>
@@ -34,7 +33,6 @@ function Home() {
           </p>
         </div>
       </div>
-
 
       <div className='MainH2'>
         <div className='Hp2'>
@@ -57,7 +55,32 @@ function Home() {
           </p>
         </div>
       </div>
-      <Footer/>
+
+      <footer className='Footer-Main'>
+        <div className='container'>
+          <div className='footer-content'>
+            <h3 className='H3'>Contact Us</h3>
+            <p>Email: quickquota@gmail.com</p>
+            <p>Phone: +94711234567</p>
+            <p>Address: Colombo, Sri Lanka</p>
+          </div>
+
+          <div className='footer-content'>
+            <h3 className='H3'>Follow Us</h3>
+            <ul className='social-icon'>
+              <li><a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.twitter.com/"><i className="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/"><i className="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div className='footer-bar'>
+          <p>&copy; Copyright Quick Quota. All rights reserved<br/>
+             Designed by TEAM Quick Quota
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
