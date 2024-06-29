@@ -1,17 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     overflow-x: hidden; 
     height: 100%;
 }
-
 .Feed-Main{
     background-image:linear-gradient(to top, rgb(4, 4, 37),rgba(6, 4, 97, 0.927)) ;
     position: relative;
     background-position: center ;
-    height: 120vh;
+    height: 100vh;
     background-size: cover;
 }
 .Feedback-M {
@@ -21,43 +21,44 @@ body {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    top:90px;
+    top:40px;
     color: white;
 }
 .Feedback-H1{
     font-size: 50px;
     font-family: sans-serif;
     position: relative;
-    top:50px;   
+    top:20px;   
     text-shadow:0 0 6px #27c0ff ;
 }
-  
 .Feedback-Form {
     margin: 20px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;  
 }
-.input-boxF {
+.input-boxF{
     margin-bottom: 15px;
     position: relative;
-    top:120px;
-    left:450px; 
+    top:70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 35px;
     color: #ffb300 ;
 }  
 .Feed {  
-    width: 40%;
+    width: 50%;
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+}  
 .FeedBtn{
-    position: relative;
     bottom: -140px;
-    left: 650px;
     padding: 10px;
     width: 200px;
     border-radius: 5px;
@@ -65,9 +66,111 @@ body {
     outline: solid 3px #ffb300 ;
     cursor: pointer;
     font-size: 15px;
+    display: block;
+    margin: 110px auto 0;
 }
 .FeedBtn:hover{
     background: transparent;
     backdrop-filter:blur(0.9); 
     color: #ffb300;
+}
+@media (min-width:375px) and (max-width:520px){
+.Feedback-H1{
+    font-size: 35px;
+}
+.Feedback-M p{
+    font-size: 12px;
+}
+.input-boxF{
+    font-size: 30px;
+}
+.Feed{
+    width: 70%;
+    padding: 5px;
+}
+.FeedBtn{
+    padding: 5px;
+    margin: 100px auto 0;
+    width: 130px;
+}
+}
+@media (min-width:520px) and (max-width:700px){
+    .Feedback-H1{
+        font-size: 45px;
+    }
+    .Feedback-M p{
+        font-size: 15px;
+    }
+    .input-boxF{
+        font-size: 30px;
+    }
+    .Feed{
+        width: 70%;
+        padding: 5px;
+    }
+    .FeedBtn{
+        padding: 5px;
+        margin: 100px auto 0;
+        width: 130px;
+    }
+}
+@media (min-width:700px) and (max-width:900px){
+    .Feedback-H1{
+        font-size: 45px;
+    }
+    .Feedback-M p{
+        font-size: 18px;
+    }
+    .input-boxF{
+        font-size: 30px;
+    }
+    .Feed{
+        width: 70%;
+        padding: 7px;
+    }
+    .FeedBtn{
+        padding: 7px;
+        margin: 100px auto 0;
+        width: 150px;
+    }
+}
+@media (min-width:900px) and (max-width:1100px){
+    .Feedback-H1{
+        font-size: 50px;
+    }
+    .Feedback-M p{
+        font-size: 19px;
+    }
+    .input-boxF{
+        font-size: 30px;
+    }
+    .Feed{
+        width: 60%;
+        padding: 9px;
+    }
+    .FeedBtn{
+        padding: 9px;
+        margin: 100px auto 0;
+        width: 150px;
+    }
+}
+@media (min-width:1100px) and (max-width:1400px){
+    .Feedback-H1{
+        font-size: 50px;
+    }
+    .Feedback-M p{
+        font-size: 21px;
+    }
+    .input-boxF{
+        font-size: 30px;
+    }
+    .Feed{
+        width: 50%;
+        padding: 9px;
+    }
+    .FeedBtn{
+        padding: 9px;
+        margin: 100px auto 0;
+        width: 150px;
+    }
 }
