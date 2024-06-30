@@ -17,7 +17,7 @@
     overflow: hidden;
 }
 .image-text {
-    width: 455px;
+    width: 475px;
     height: 100%;
     right: -100%;
     position: absolute;
@@ -35,7 +35,7 @@
     transition: 1.5s;    
 }
 .carousel-item:hover .image-text {
-    right: 30px; 
+    right: 31px; 
 }
 .image-text h1{
     position: relative;
@@ -65,7 +65,532 @@
     color: #ffb300;
 }
 
+@media (min-width:375px) and (max-width:420px){
+   
+.Hori{
+    max-width: 90%;
+    max-height: 50vh;
+    position: relative;
+    left: 0;
+   }
+.Hori-M{
+    left: 20px;
+   }
+.image-text{
+    width: 90%;
+   }
+.carousel-item:hover .image-text {
+    right: 37.5px; 
+   }
+.image-text h1 {
+    font-size: 40px; 
+   }
+.Cbtn{
+    font-size: 25px;
+   }   
+.carousel-item {
+    position: relative;
+    left: 0px;
+   }
+}
 
+@media (min-width:420px) and (max-width:464px){
+
+.Hori{
+    max-width: 90%;
+    max-height: 60vh;
+    position: relative;
+    left: 0;
+   }
+.Hori-M{
+    left: 20px;
+   }
+.image-text{
+    width: 90%;
+   }
+.carousel-item:hover .image-text {
+    right: 42.5px; 
+   }
+.image-text h1 {
+    font-size: 40px; 
+   }
+.Cbtn{
+    font-size: 25px;
+   }     
+}
+
+@media (min-width:464px) and (max-width:500px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 40vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 10px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 23.5px; 
+       }
+    .image-text h1 {
+        font-size: 30px; 
+        top: -25px;
+       }
+    .Cbtn{
+        font-size: 13px;
+        padding: 6px 20px;
+       }     
+}
+@media (min-width:500px) and (max-width:550px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 40vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 10px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 25.5px; 
+       }
+    .image-text h1 {
+        font-size: 30px; 
+        top: -25px;
+       }
+    .Cbtn{
+        font-size: 13px;
+        padding: 6px 20px;
+       }     
+}
+@media (min-width:550px) and (max-width:600px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 40vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 10px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 30.5px; 
+       }
+    .image-text h1 {
+        font-size: 30px; 
+        top: -25px;
+       }
+    .Cbtn{
+        font-size: 13px;
+        padding: 6px 20px;
+       }     
+}
+@media (min-width:600px) and (max-width:650px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 40vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 15px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 30.5px; 
+       }
+    .image-text h1 {
+        font-size: 30px; 
+        top: -25px;
+       }
+    .Cbtn{
+        font-size: 13px;
+        padding: 6px 20px;
+       }     
+}
+@media (min-width:650px) and (max-width:700px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 40vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 15px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 32.5px; 
+       }
+    .image-text h1 {
+        font-size: 30px; 
+        top: -25px;
+       }
+    .Cbtn{
+        font-size: 13px;
+        padding: 6px 20px;
+       }     
+}
+@media (min-width:700px) and (max-width:750px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 50vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 15px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 34.5px; 
+       }
+    .image-text h1 {
+        font-size: 38px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 40px;
+       }     
+}
+@media (min-width:750px) and (max-width:800px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 50vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 15px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 38px; 
+       }
+    .image-text h1 {
+        font-size: 38px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 40px;
+       }     
+}
+@media (min-width:800px) and (max-width:850px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 50vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 15px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 40px; 
+       }
+    .image-text h1 {
+        font-size: 39px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 40px;
+       }     
+}
+@media (min-width:850px) and (max-width:900px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 100%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 15px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 43px; 
+       }
+    .image-text h1 {
+        font-size: 40px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 60px;
+       }     
+}
+@media (min-width:900px) and (max-width:950px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 100%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 45px; 
+       }
+    .image-text h1 {
+        font-size: 40px; 
+        top: -70px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 60px;
+       }     
+}
+@media (min-width:950px) and (max-width:1000px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 100%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 48px; 
+       }
+    .image-text h1 {
+        font-size: 43px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 40px;
+       }     
+}
+@media (min-width:1000px) and (max-width:1024px){
+
+    .Hori{
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 100%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 25px; 
+       }
+    .image-text h1 {
+        font-size: 43px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 22px;
+        padding: 10px 40px;
+        top: 40px;
+       }     
+}
+@media (min-width:1024px) and (max-width:1100px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 50vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 36px; 
+       }
+    .image-text h1 {
+        font-size: 47px; 
+        top: -50px;
+       }
+    .Cbtn{
+        font-size: 25px;
+        padding: 10px 40px;
+        top: 40px;
+       }     
+}
+@media (min-width:1100px) and (max-width:1200px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 50vh;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 39px; 
+       }
+    .image-text h1 {
+        font-size: 50px; 
+        top: -60px;
+       }
+    .Cbtn{
+        font-size: 27px;
+        padding: 10px 40px;
+        top: 55px;
+       }     
+}
+@media (min-width:1200px) and (max-width:1300px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 41.5px; 
+       }
+    .image-text h1 {
+        font-size: 50px; 
+        top: -60px;
+       }
+    .Cbtn{
+        font-size: 27px;
+        padding: 10px 40px;
+        top: 55px;
+       }     
+}
+@media (min-width:1300px) and (max-width:1400px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 44.5px; 
+       }
+    .image-text h1 {
+        font-size: 50px; 
+        top: -60px;
+       }
+    .Cbtn{
+        font-size: 27px;
+        padding: 10px 40px;
+        top: 55px;
+       }     
+}
+@media (min-width:1400px) and (max-width:1500px){
+
+    .Hori{
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+        left: 0;
+       }
+    .Hori-M{
+        left: 20px;
+       }
+    .image-text{
+        width: 90%;
+        height: 100%;
+       }
+    .carousel-item:hover .image-text {
+        right: 50.5px; 
+       }
+    .image-text h1 {
+        font-size: 50px; 
+        top: -60px;
+       }
+    .Cbtn{
+        font-size: 27px;
+        padding: 10px 40px;
+        top: 55px;
+       }     
+}
+  
 
 
 
