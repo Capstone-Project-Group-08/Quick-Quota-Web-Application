@@ -16,7 +16,7 @@ function SlideCooking() {
 
   return (
     <div className="App">
-      <div className='Slide-Overlay'>
+      <div className='Slide-OverlayMu'>
         
       </div>
   
