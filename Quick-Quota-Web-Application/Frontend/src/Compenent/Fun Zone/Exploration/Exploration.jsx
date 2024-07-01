@@ -12,7 +12,7 @@ export default function () {
         <Navbar/>
         <SlideCooking/>
         <div className='EX1'>
-          <h1>CRAFTING</h1>
+          <h1>EXPLORATION</h1>
         </div>
 
         <div className='EXL'>
