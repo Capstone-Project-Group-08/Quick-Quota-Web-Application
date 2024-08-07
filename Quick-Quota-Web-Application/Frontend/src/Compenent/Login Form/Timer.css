@@ -1,0 +1,540 @@
+.timer-container {
+    position: absolute;
+    top: 300px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    height: 20px;
+    margin: 20px auto;
+    z-index: 10;
+}
+
+input[type="number"] {
+    position: relative;
+    right: -130px;
+    top: 50px;
+    padding: 10px;
+    width: 170px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: rgba(24, 4, 67, 1);
+    border-radius: 4px;
+    margin-bottom: 5px;
+    color: white;
+    
+
+}
+
+.select2 {
+    position: relative;
+    top: 60px;
+    right: -133px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: rgba(24, 4, 67, 1);
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.option1 {
+    color: white;
+}
+
+.Timer-btn{
+    position: relative;
+    top: 60px;
+    right: -132px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(24, 4, 67, 1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border: 2px solid white;
+}
+
+.Timer-btn:disabled {
+    background-color: rgba(24, 4, 67, 1);
+}
+
+.timer-display {
+    position: relative;
+    top: 60px;
+    right: -130px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.timer-message {
+    position: relative;
+    top: 50px;
+    right: -127px;
+    color: rgba(45, 219, 198, 1);
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+label input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+@media (min-width:375px) and (max-width:400px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 50px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: -10px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: -5px;
+    }
+
+}
+@media (min-width:400px) and (max-width:420px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 60px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 0px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 15px;
+    }
+
+}
+@media (min-width:420px) and (max-width:450px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 70px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 10px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 25px;
+    }
+}
+@media (min-width:450px) and (max-width:470px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 80px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 80px;
+        right: 10px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 25px;
+    }
+
+}
+@media (min-width:470px) and (max-width:500px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 95px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 27px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 40px;
+    }
+
+}
+@media (min-width:500px) and (max-width:530px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 110px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 41px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 55px;
+    }
+
+}
+@media (min-width:530px) and (max-width:560px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 125px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 60px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 70px;
+    }
+
+}
+@media (min-width:560px) and (max-width:600px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 135px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 70px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 85px;
+    }
+
+}
+@media (min-width:600px) and (max-width:630px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 145px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 80px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 95px;
+    }
+
+}
+@media (min-width:630px) and (max-width:660px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 165px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 100px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 115px;
+    }
+
+}
+@media (min-width:660px) and (max-width:700px){
+    input[type="number"],
+    .select2,
+    .Timer-btn,
+    .timer-display,
+    .timer-message {
+        position: relative;
+        right: 180px;
+        top: 60px;
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+        top: 70px;
+        right: 110px;
+    }
+
+    .timer-message {
+        font-size: 16px;
+        top: 70px;
+        right: 125px;
+    }
+
+}
+@media (min-width:700px) and (max-width:800px){
+
+    input[type="number"]{
+        width: 110px;
+        font-size: 10px;
+        top: 75px;
+        left: 20px;
+        height: 5px;
+    }
+    .select2{
+        top: 75px;
+        left: 20px;
+        font-size: 10px;
+    }
+    .Timer-btn{
+        top: 75px;
+        left: 20px;
+        font-size: 10px;   
+    }
+    .timer-display{
+        top: 75px;
+        left: 20px;
+    }
+
+    .timer-message{
+        top: 75px;
+        left: 20px;
+    }
+}
+@media (min-width:800px) and (max-width:900px){
+
+    input[type="number"]{
+        width: 110px;
+        font-size: 10px;
+        top: 75px;
+        left: 40px;
+        height: 5px;
+    }
+    .select2{
+        top: 75px;
+        left: 40px;
+        font-size: 10px;
+    }
+    .Timer-btn{
+        top: 75px;
+        left: 40px;
+        font-size: 10px;   
+    }
+    .timer-display{
+        top: 75px;
+        left: 40px;
+    }
+
+    .timer-message{
+        top: 75px;
+        left: 40px;
+    }
+}
+@media (min-width:900px) and (max-width:1000px){
+
+    input[type="number"]{
+        width: 110px;
+        font-size: 10px;
+        top: 75px;
+        left: 70px;
+        height: 5px;
+    }
+    .select2{
+        top: 75px;
+        left: 70px;
+        font-size: 10px;
+    }
+    .Timer-btn{
+        top: 75px;
+        left: 70px;
+        font-size: 10px;   
+    }
+    .timer-display{
+        top: 75px;
+        left: 70px;
+    }
+
+    .timer-message{
+        top: 75px;
+        left: 70px;
+    }
+}
+@media (min-width:1000px) and (max-width:1100px){
+
+    input[type="number"]{
+        width: 110px;
+        font-size: 10px;
+        top: 15px;
+        left: 80px;
+        height: 10px;
+    }
+    .select2{
+        top: 18px;
+        left: 80px;
+        font-size: 10px;
+    }
+    .Timer-btn{
+        top: 15px;
+        left: 80px;
+        font-size: 10px;   
+    }
+    .timer-display{
+        top: 15px;
+        left: 80px;
+    }
+
+    .timer-message{
+        top: 15px;
+        left: 80px;
+    }
+}
+@media (min-width:1000px) and (max-width:1200px){
+
+    input[type="number"]{
+        width: 110px;
+        font-size: 10px;
+        top: 75px;
+        left: 100px;
+        height: 10px;
+    }
+    .select2{
+        top: 75px;
+        left: 100px;
+        font-size: 10px;
+    }
+    .Timer-btn{
+        top: 75px;
+        left: 100px;
+        font-size: 10px;   
+    }
+    .timer-display{
+        top: 75px;
+        left: 100px;
+    }
+
+    .timer-message{
+        top: 75px;
+        left: 100px;
+    }
+}
+

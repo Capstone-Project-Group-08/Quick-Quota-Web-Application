@@ -1,0 +1,40 @@
+.analyze-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.analyze-container h2,
+.analyze-container h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.analyze-container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.screen-time-idea {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.tips-list,
+.day-by-day-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.tips-list li,
+.day-by-day-list li {
+    margin-bottom: 10px;
+}

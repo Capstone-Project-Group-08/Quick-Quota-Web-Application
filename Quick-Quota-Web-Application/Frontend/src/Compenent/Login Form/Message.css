@@ -1,0 +1,68 @@
+.full {
+
+    background-color: rgba(45, 219, 198, 1);
+    width: 100%;
+    height: 100vh;
+    /* Ensure the full height of the viewport is covered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /* Increased width for better readability */
+    max-width: 90%;
+    /* Set maximum width to maintain responsiveness */
+    padding: 30px;
+    /* Increased padding for better spacing */
+    background-color: rgba(24, 4, 67, 1);
+    /* Changed background color to pure white */
+    border: 2px solid #f5dd0a;
+    /* Lightened border color */
+    border-radius: 10px;
+    /* Increased border radius for softer edges */
+    box-shadow: 0 0 20px rgba(8, 0, 0, 0.2);
+    /* Increased box shadow for depth */
+    z-index: 1000;
+}
+
+.message-content {
+    text-align: center;
+    color: rgba(45, 219, 198, 1);
+    font-size: 24px;
+
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    /* Increased top position for better alignment */
+    right: 15px;
+    /* Increased right position for better alignment */
+    font-size: 20px;
+    /* Increased font size for better visibility */
+    color: #f5dd0a;
+    /* Changed color to a lighter shade */
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #dacb4a;
+    /* Darkened color on hover for better feedback */
+}
+
+h2 {
+    top: 180px;
+    left: 15px;
+    /* Increased margin for better separation */
+    font-size: 24px;
+    /* Increased font size for better emphasis */
+    color: #dacb4a;
+    /* Changed color to a darker shade for better readability */
+}
