@@ -1,65 +1,109 @@
- import React from "react";
- import'./Signin.css';
- import Logo2 from './Logo2.png';
- import { FaUser, FaLock } from "react-icons/fa";
+import React, { useState } from "react";
+import './Signin.css';
+import Logo2 from './Logo2.png';
+import { FaUser, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
- const LoginForm =()=>{
-    return(
+const SigninForm = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [termsAgreed, setTermsAgreed] = useState(false);
 
-        <div className="wrapper">
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
-         
-  
-            <div className="side-001">
-                <form action="">
-                   <h1>Welcome Back!</h1>
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
 
-                   <div className="input-box">
-                      <input type = "Username" placeholder ='Continue with Google' readOnly  required className="user"/>
-                      
-                    </div>
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
 
+  const handleTermsAgreement = () => {
+    setTermsAgreed(!termsAgreed);
+  };
 
-                    <div className="input-box">
-                      <input type = "Username" placeholder ='Username' required className="user"/>
-                      <FaUser className="icon" />
-                    </div>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!username || !password || !termsAgreed) {
+      alert("Please fill in all fields and agree to the terms");
+      return;
+    }
+    // Make API call to register user with username and password
+    fetch('http://127.0.0.1:8000/api/register/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, password }),
+    })
+      .then(response => {
+        if (response.ok) {
+          // Redirect to Fun Zone page
+          window.location.href = '/log%20in';
+        } else {
+          // Handle error response
+          response.json().then(data => {
+            alert(data.error || 'Something went wrong.');
+          });
+        }
+      })
+      .catch(error => {
+        console.error("Registration Error:", error);
+        // Handle network error
+        alert('Something went wrong. Please try again.');
+      });
+  };
 
-                    <div className="input-box">
-                      <input type = "Username" placeholder ='Password' required className="user"/>
-                      <FaLock className="icon" />
-                    </div>
+  return (
+    <div className="wrapper">
+      <div className="side-001">
+        <form onSubmit={handleSubmit}>
+          <h1>Welcome Back!</h1>
 
-                    <div className="remember-forget">
-                      <lable><input type = "checkbox" />I agree with terms and condition</lable>
-                    </div>
+          <div className="input-box">
+            <input type="text" placeholder="Username" value={username} onChange={handleUsernameChange} required className="user"/>
+            <FaUser className="icon" />
+          </div>
 
-                     <button type="submit">Create Account</button>
-    
-                </form>
-            </div> 
+          <div className="input-box">
+            <input type={showPassword ? "text" : "password"}placeholder="Password"value={password}onChange={handlePasswordChange} required className="user"/>
+            <FaLock className="icon" />
+            {showPassword ? (
+              <FaEyeSlash className="icon eye-icon" onClick={togglePasswordVisibility} />
+            ) : (
+              <FaEye className="icon eye-icon" onClick={togglePasswordVisibility} />
+            )}
+          </div>
 
-            
-          
-            <div className="side-002">
+          <div className="remember-forget">
+            <label>
+              <input type="checkbox" checked={termsAgreed} onChange={handleTermsAgreement} /> I agree with terms and condition
+            </label>
+          </div>
 
-                <div className="Double">
-                    <p>
-                       Welcom back to your<br></br>
-                       digital oasis-Login to<br></br>
-                       Continue your journey
-                    </p>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
 
-                       <button type="submit" className="loginbutton">Login</button>
-                </div> 
-
-                <img src={Logo2} alt="" className='Logo2'/>
-
-            </div>  
+      <div className="side-002">
+        <div className="Double">
+          <p>
+            Welcome back to your<br />
+            digital oasis-Login to<br />
+            Continue your journey
+          </p>
+          <button type="button" className="loginbutton">
+            <Link to="/log in">LogIn</Link>
+          </button>
         </div>
+        <img src={Logo2} alt="" className="Logo2" />
+      </div>
+    </div>
+  );
+};
 
-    );
- };
-
- export default LoginForm;
-   
+export default SigninForm;
