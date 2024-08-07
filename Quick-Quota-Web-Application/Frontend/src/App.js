@@ -19,6 +19,15 @@ import Reading from './Compenent/Fun Zone/Reading/Reading';
 import ForgotPassword from './Compenent/Login Form/ForgotPassword';
 import Exploration from './Compenent/Fun Zone/Exploration/Exploration';
 import Feedback from './Compenent/Get In Touch/Feedback';
+import Profile from './Compenent/Login Form/Profile';
+import Message1 from './Compenent/Login Form/Message1';
+import Message2 from './Compenent/Login Form/Message2';
+import Message3 from './Compenent/Login Form/Message3';
+import FinalResult from './Compenent/Login Form/FinalResult';
+import Analyze from './Compenent/Login Form/Analyze';
+
+
+
 
 
 function App() {
@@ -45,6 +54,13 @@ function App() {
           <Route path = "/Reading" element ={<Reading/>}></Route>
           <Route path = "/Exploration" element ={<Exploration/>}></Route>
           <Route path = "/Add to Feedback" element ={<Feedback/>}></Route>
+          <Route path = "/Profile" element ={<Profile/>}></Route>
+          <Route path="/Message1" element={<Message1 />}></Route>
+          <Route path="/Message2" element={<Message2 />}></Route>
+          <Route path="/Message3" element={<Message3 />}></Route>
+          <Route path="/FinalResult" element={<FinalResult />}></Route>
+          <Route path="/Analyze" element={<Analyze/>}></Route>
+
 
         </Routes>
       </BrowserRouter>
