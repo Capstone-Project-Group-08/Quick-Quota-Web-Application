@@ -1,83 +1,548 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.Profile{
-    background-color: rgba(45, 219, 198, 1);
-    width: 60%;
+.Profile {
+    width: 75%;
     height: 70vh;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    left: 300px;
+    justify-content: center;
+    left: 200px;
     bottom: -110px;
     border-radius: 40px;
 }
-
-
-
-.Pmain{
+.Pmain {
     height: 100vh;
     justify-content: center;
     background-color: rgba(24, 4, 67, 1);
 }
 
-.Check-h4{
+.Check-h4 {
     position: relative;
-    top: -150px;
-    left: 585px;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-align: center;
-    
-}
-.IconP1{
-    width: 30%;
-    height: 20%;
-    position: relative;
-    top: -220px;
-    left: 800px;
-    transition: 0.5s; 
-}
-
-.IconP1:hover{
-    transform: translateX(10px);
-}
-.IconP2{
-    width: 30%;
-    height: 20%;
-    position: relative;
-    top: 170px;
-    right: 630px;
-    transition: 0.5s; 
-}
-.IconP2:hover{
-    transform: translateX(-10px);
-}
-
-.Check-h5{
-    position: relative;
-    top: 220px;
-    right: 540px;
+    top: -200px;
+    left: 830px;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    z-index: 1;
+}
+.IconP1 {
+    width: 30%;
+    height: 20%;
+    position: relative;
+    top: -270px;
+    left: 1030px;
+    transition: 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    z-index: 1;
+}
+.IconP1:hover {
+    transform: translateX(10px);
+    z-index: 1;
 }
 
-.LogoF{
-    width: 200px;
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+.welcome-message {
+    color: #ffb300;
+    position: relative;
+    left: -130px;
+    top: 10px;
+    font-size: 60px;
+    text-align: left;
+    z-index: 1;
+    animation: slideIn 5s ease-in-out;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+
+.clock-container {
+    position: fixed;
+    top: 75px;
+    left: 80px;
+    height: 140px;
     display: flex;
-    position: relative;
-    left: 135px;
-    bottom: 60px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(24, 4, 67, 1);
+    border: 3px solid #eeedf3;
+    border-radius: 8px;
+    box-shadow: -1px 1px 30px 2px rgb(4, 4, 9);
+    width: 150px;
+    z-index: 10;
 }
 
-.PR-h1{
-    font-size: 49px;
-    position: relative;
-    bottom: -80px;
-    left: -100px;
-    
+.clock-container .clock-time {
+    padding: 5px;
+    margin-right: 10px; 
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 20px;
+    top: 15px;
+    left: 10px;
+    width: auto;   
 }
 
+.select1 {
+    padding: 10px;
+    font-size: 16px;
+    top: 50px;
+    background-color:white;
+    border: 3px solid #eeedf3;
+    left: -120px;
+}
+
+.up {
+    top: 20px;
+    ;
+}
+
+.down {
+    top: 120px;
+}
+
+.textcolor {
+    color: #020205;
+}
+
+.tc {
+    color: #052956;
+}
+
+.pr-btn {
+    position: fixed;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    bottom: 50px;
+    left: 80px;
+    background-color: #000000;
+    border: 3px solid white;
+    font-size: 16px;
+    color: white;
+    z-index: 1;
+}
+@media (min-width:375px) and (max-width:400px){
+    .Profile {
+        width: 90%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Pmain{
+        height: 110vh;
+    }
+
+    .Check-h4 {
+        top: 475px;
+        left: -15px;
+        font-size: 22px;
+    }
+
+    .IconP1 {
+        width: 20%;
+        height: auto;
+        top: 425px;
+        left: 170px;
+    }
+
+    .welcome-message {
+        left: 0;
+        top: -140px;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .clock-container {
+        position: relative;
+        top: -100px;
+        left: 0px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clock-container .clock-time {
+        font-size: 16px;
+    }
+
+    .select1 {
+        font-size: 14px;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding: 5px;
+    }
+
+    .pr-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        position: relative;
+        top: 440px;
+        left: 0px;
+    }
+}
+
+@media (min-width:400px) and (max-width:600px){
+
+    .Profile {
+        width: 90%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Pmain{
+        height: 110vh;
+    }
+
+    .Check-h4 {
+        top: 475px;
+        left: -15px;
+        font-size: 22px;
+    }
+
+    .IconP1 {
+        width: 20%;
+        height: auto;
+        top: 425px;
+        left: 170px;
+    }
+
+    .welcome-message {
+        left: 0;
+        top: -140px;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .clock-container {
+        position: relative;
+        top: -120px;
+        left: 0px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clock-container .clock-time {
+        font-size: 16px;
+    }
+
+    .select1 {
+        font-size: 14px;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding: 5px;
+    }
+
+    .pr-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        position: relative;
+        top: 440px;
+        left: 0px;
+    }
+}
+@media (min-width:600px) and (max-width:700px){
+
+    .Profile {
+        width: 90%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Pmain{
+        height: 110vh;
+    }
+
+    .Check-h4 {
+        top: 475px;
+        left: -15px;
+        font-size: 22px;
+    }
+
+    .IconP1 {
+        width: 20%;
+        height: auto;
+        top: 425px;
+        left: 170px;
+    }
+
+    .welcome-message {
+        left: 0;
+        top: -160px;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .clock-container {
+        position: relative;
+        top: -120px;
+        left: 0px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clock-container .clock-time {
+        font-size: 16px;
+    }
+
+    .select1 {
+        font-size: 14px;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding: 5px;
+    }
+
+    .pr-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        position: relative;
+        top: 440px;
+        left: 0px;
+    }
+}
+@media (min-width:700px) and (max-width:800px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 28px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 610px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 210px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 410px;
+        top: -300px;
+    }
+        
+}
+@media (min-width:800px) and (max-width:900px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 35px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 610px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 300px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 500px;
+        top: -300px;
+    }
+        
+}
+@media (min-width:900px) and (max-width:1000px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 42px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 610px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 390px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 590px;
+        top: -300px;
+    }    
+}
+@media (min-width:1000px) and (max-width:1100px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 50px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 610px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 490px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 690px;
+        top: -300px;
+    }    
+}
+@media (min-width:1100px) and (max-width:1200px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 55px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 610px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 590px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 790px;
+        top: -300px;
+    }    
+}
+@media (min-width:1200px) and (max-width:1300px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 58px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 590px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 690px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 890px;
+        top: -300px;
+    }    
+}
+@media (min-width:1300px) and (max-width:1400px){
+    .welcome-message {
+        left: -220px;
+        top: 0px;
+        font-size: 58px;
+        text-align: left;
+    }
+    .clock-container {
+       width: 120px;
+       height: 110px;  
+       left: 25px;
+       top: 20px;
+    }
+    .pr-btn {
+        top: 590px;
+        left: 25px;
+    }
+    .Check-h4{
+        left: 750px;
+        top: -230px;
+    }
+    .IconP1{
+        left: 950px;
+        top: -300px;
+    }    
+}

@@ -118,6 +118,11 @@
    left: 215px;
    top: -10px;
 }
+.side-02 .loginbutton a {
+    color: #fff; 
+    text-decoration: none;
+}
+
 
 .Double{
     position: relative;

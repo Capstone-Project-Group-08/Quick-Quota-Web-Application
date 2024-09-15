@@ -12,7 +12,7 @@ const Slideshow = ({ images, interval = 3000 }) => {
   }, [images.length, interval]);
 
   return (
-    <div className="slideshow">
+    <div className="slideshowH">
       <img src={images[index]} alt={`Slide ${index}`} />
     
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo1 from './Logo1.png';
 import './ForgotPassword.css';
-import { FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
@@ -55,7 +55,7 @@ export default function ForgotPassword() {
 
           <div className="input-box1">
             <input type={showPassword ? 'text' : 'password'} placeholder='New Password' required className="user"value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
-            <FaLock className="icon" />
+        
             {showPassword ? (
               <FaEyeSlash className="icon eye-icon" onClick={togglePasswordVisibility} />
             ) : (
@@ -65,7 +65,7 @@ export default function ForgotPassword() {
 
           <div className="input-box1">
             <input type={showPassword ? 'text' : 'password'}placeholder='Confirm Password' required className="user"value={confirmPassword}onChange={(e) => setConfirmPassword(e.target.value)}/>
-            <FaLock className="icon" />
+            
             {showPassword ? (
               <FaEyeSlash className="icon eye-icon" onClick={togglePasswordVisibility} />
             ) : (

@@ -28,11 +28,12 @@
     top: 170px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h2{
+.OFH2 {
     font-size: 50px;
     color: #ffb300;
     position: relative;
-    left: 40px;
+    
+    left: 0px;
     top: 140px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;

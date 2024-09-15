@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Signin.css';
 import Logo2 from './Logo2.png';
-import { FaUser, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaUser,FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SigninForm = () => {
@@ -71,7 +71,7 @@ const SigninForm = () => {
 
           <div className="input-box">
             <input type={showPassword ? "text" : "password"}placeholder="Password"value={password}onChange={handlePasswordChange} required className="user"/>
-            <FaLock className="icon" />
+            
             {showPassword ? (
               <FaEyeSlash className="icon eye-icon" onClick={togglePasswordVisibility} />
             ) : (
@@ -96,7 +96,7 @@ const SigninForm = () => {
             digital oasis-Login to<br />
             Continue your journey
           </p>
-          <button type="button" className="loginbutton">
+          <button type="button" className="loginbuttonLL">
             <Link to="/log in">LogIn</Link>
           </button>
         </div>

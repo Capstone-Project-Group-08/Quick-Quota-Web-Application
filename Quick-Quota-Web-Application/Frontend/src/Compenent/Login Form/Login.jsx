@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Logo1 from "./Logo1.png";
-import { FaUser, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaUser, FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import axios from 'axios';
@@ -78,7 +78,7 @@ const LoginForm = () => {
 
           <div className="input-box">
             <input type={showPassword ? "text" : "password"} placeholder="Password" value={password}  onChange={(e) => setPassword(e.target.value)} required className="user"/>
-            <FaLock className="icon" />
+           
             {showPassword ? (
               <FaEyeSlash className="icon eye-icon" onClick={togglePasswordVisibility} />
             ) : (

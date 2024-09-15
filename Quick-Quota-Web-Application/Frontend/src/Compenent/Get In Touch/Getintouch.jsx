@@ -3,6 +3,7 @@ import Navbar from '../Nav bar/Navbar';
 import './Getintouch.css';
 import FooterL from '../Footer/FooterL';
 import { Link } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 
 

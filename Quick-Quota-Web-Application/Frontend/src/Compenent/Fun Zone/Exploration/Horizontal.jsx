@@ -46,7 +46,7 @@ export default function Horizontal() {
    <div className='carousel-item'> 
           <img src={e1} alt="" className='Hori'/>
           <div className='image-text'>
-             <h1> EXPLORATION</h1>
+             <h1> SCIENTIFIC</h1>
              <button className='Cbtn'><Link to= "https://youtu.be/YlYgOedviIc?si=Znp5cW93F7q9EMGV">Watch Now</Link></button> 
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Horizontal() {
         <div className='carousel-item'> 
           <img src={e2} alt="" className='Hori'/>
           <div className='image-text'>
-             <h1> EXPLORATION  </h1>
+             <h1> GEOGRAPHICAL </h1>
              <button className='Cbtn'><Link to= "https://youtu.be/YlYgOedviIc?si=Znp5cW93F7q9EMGV">Watch Now</Link></button> 
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Horizontal() {
         <div className='carousel-item'> 
           <img src={e3} alt="" className='Hori'/>
           <div className='image-text'>
-             <h1> EXPLORATION  </h1>
+             <h1> VIRTUAL </h1>
              <button className='Cbtn'><Link to= "https://youtu.be/YlYgOedviIc?si=Znp5cW93F7q9EMGV">Watch Now</Link></button> 
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Horizontal() {
         <div className='carousel-item'> 
           <img src={e4} alt="" className='Hori'/>
           <div className='image-text'>
-             <h1> EXPLORATION  </h1>
+             <h1> HISTORICAL  </h1>
              <button className='Cbtn'><Link to= "https://youtu.be/YlYgOedviIc?si=Znp5cW93F7q9EMGV">Watch Now</Link></button> 
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function Horizontal() {
         <div className='carousel-item'> 
           <img src={e5} alt="" className='Hori'/>
           <div className='image-text'>
-             <h1> EXPLORATION  </h1>
+             <h1> SPACE </h1>
              <button className='Cbtn'><Link to= "https://youtu.be/YlYgOedviIc?si=Znp5cW93F7q9EMGV">Watch Now</Link></button> 
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function Horizontal() {
         <div className='carousel-item'> 
           <img src={e6} alt="" className='Hori'/>
           <div className='image-text'>
-             <h1> EXPLORATION  </h1>
+             <h1> STAR PATTERNS </h1>
              <button className='Cbtn'><Link to= "https://youtu.be/YlYgOedviIc?si=Znp5cW93F7q9EMGV">Watch Now</Link></button> 
           </div>
         </div>

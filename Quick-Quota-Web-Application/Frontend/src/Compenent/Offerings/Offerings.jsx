@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Nav bar/Navbar';
 import './Offerings.css';
 import FooterL from '../Footer/FooterL';
+import { Link } from "react-router-dom";
 
 function Offerings() {
   return (
@@ -12,7 +13,7 @@ function Offerings() {
            <h1>OFFERINGS</h1>
         </div>
 
-       <h2>Welcome to Quick Quota!</h2>
+       <h2 className='OFH2'>Welcome to Quick Quota!</h2>
 
           <p className='p1'>We're dedicated to helping you and your family to manage screen time effectively. Explore our offerings below.</p>
 
@@ -70,7 +71,9 @@ function Offerings() {
       </div>
 
 
-      <button className='OFFBTN'>Get Start</button>
+      <button className='OFFBTN'>
+        <Link to = "/Sign in">Get Start</Link>
+      </button>
       <FooterL/>
       
     </div>

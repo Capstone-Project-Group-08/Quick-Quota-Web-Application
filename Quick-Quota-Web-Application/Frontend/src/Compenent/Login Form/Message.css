@@ -23,7 +23,7 @@
     /* Increased padding for better spacing */
     background-color: rgba(24, 4, 67, 1);
     /* Changed background color to pure white */
-    border: 2px solid #f5dd0a;
+    border: 2px solid rgba(45, 219, 198, 1);
     /* Lightened border color */
     border-radius: 10px;
     /* Increased border radius for softer edges */
@@ -63,6 +63,6 @@ h2 {
     /* Increased margin for better separation */
     font-size: 24px;
     /* Increased font size for better emphasis */
-    color: #dacb4a;
+    color: rgba(24, 4, 67, 1);
     /* Changed color to a darker shade for better readability */
 }

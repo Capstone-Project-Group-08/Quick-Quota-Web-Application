@@ -1,8 +1,6 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import hor2 from './hor2.jpg'
-import hor from './hor.jpg'
 import c2 from './c2.jpg';
 import c4 from './c4.jpg';
 import c5 from './c5.jpg';
@@ -15,7 +13,7 @@ import { Link } from 'react-router-dom';
 export default function Horizontal() {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
+
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -39,7 +37,7 @@ export default function Horizontal() {
     <div  className='Hori-M'>
         <Carousel
         responsive={responsive}
-          autoPlay={true} // Enable auto play
+          //autoPlay={true} // Enable auto play
           autoPlaySpeed={3000} // Set auto play speed in milliseconds
           infinite={true}
         >
