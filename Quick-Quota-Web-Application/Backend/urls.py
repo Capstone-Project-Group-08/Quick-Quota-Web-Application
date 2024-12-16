@@ -25,13 +25,13 @@ from app1.views import MyTokenObtainPairView
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/login/', views.login_view, name='api_login'),
+    path('admin/', admin.site.urls), # Admin panel
+    path('api/login/', views.login_view, name='api_login'), # Custom login view
     path('api/login/', MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/register/', views.register_view, name='api_register'),
-    path('login/google/', google_oauth_login, name='google_oauth_login'),
+    path('api/register/', views.register_view, name='api_register'), # User registration endpoint
+    path('login/google/', google_oauth_login, name='google_oauth_login'), # Google OAuth login
     path('complete/google-oauth2/', google_oauth_callback, name='google_oauth_callback'),
-    path('auth/', include('social_django.urls', namespace='social')), 
+    path('auth/', include('social_django.urls', namespace='social')),  # Social auth routes
     
 ]
 
