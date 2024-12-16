@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes, } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, } from 'react-router-dom'; // Importing necessary components from react-router-dom
+// Importing all of the components from the specified paths
 import Signin from './Compenent/Assets/SigninForm/Signin';
 import Login from './Compenent/Login Form/Login';
 import Home from './Compenent/Home page/Home';
