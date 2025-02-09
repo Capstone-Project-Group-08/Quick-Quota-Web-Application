@@ -36,5 +36,14 @@ npm run dev  # Start frontend
 django manage.py runserver  # Start backend
 ```
 
-Thank you for visiting the repository! Feel free to explore and share feedback 🌟
+## 🎨 Screenshots
+
+![image](https://github.com/user-attachments/assets/50f4ebfe-32d4-4f63-8596-932d02949cdd)
+
+![image](https://github.com/user-attachments/assets/209d822b-03f4-4b88-8f75-2b71114fa67d)
+
+
+
+
+## Thank you for visiting the repository! Feel free to explore and share feedback 🌟
 
